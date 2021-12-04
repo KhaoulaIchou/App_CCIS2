@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="1906.0" prefWidth="1493.0" stylesheets="@ccis.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <content>
+      <AnchorPane fx:id="slider" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1987.0" prefWidth="1496.0" style="-fx-background-color: #FFF;">
+            <children>
+                <VBox fx:id="VboxBase" layoutX="-5.0" layoutY="196.0" prefHeight="2399.0" prefWidth="446.0" style="-fx-background-color: #4682B4;">
+                    <children>
+                        <Button id="DA" fx:id="DAdministrative" alignment="CENTER" mnemonicParsing="false" onAction="#DeAdministrativeAction" prefHeight="101.0" prefWidth="396.0" style="-fx-background-color: #4682B4;" styleClass="demarche" stylesheets="@ccis.css" text="Démarche Administrative" textFill="WHITE">
+                            <font>
+                                <Font name="Segoe UI Bold" size="25.0" />
+                            </font>
+                        </Button>
+                  <VBox fx:id="VboxDA" prefHeight="482.0" prefWidth="436.0">
+                     <children>
+                        <Button id="#" fx:id="Lieu" mnemonicParsing="false" onAction="#PageLieu" prefHeight="63.0" prefWidth="466.0" style="-fx-background-color: #4682B4;" text="Lieu" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="document" mnemonicParsing="false" onAction="#docAction" prefHeight="66.0" prefWidth="453.0" style="-fx-background-color: #4682B4;" text="                          Document demandé" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Objet" mnemonicParsing="false" onAction="#ObjetAction" prefHeight="63.0" prefWidth="457.0" style="-fx-background-color: #4682B4;" text="                     Objet de la visite" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Statut" mnemonicParsing="false" onAction="#StatutAction" prefHeight="71.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                            Statut de demandeur" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Forme" mnemonicParsing="false" onAction="#FormeAction" prefHeight="66.0" prefWidth="463.0" style="-fx-background-color: #4682B4;" text="                   Forme Juridique" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Taille" mnemonicParsing="false" onAction="#TailleAction" prefHeight="77.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                        Taille de l'entreprise" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Secteur" mnemonicParsing="false" onAction="#SecteurAction" prefHeight="75.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                    Secteur d'activité" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                        <Button id="EE" fx:id="EEntrepriseAction" mnemonicParsing="false" onAction="#EspaceEntreprise" prefHeight="102.0" prefWidth="396.0" style="-fx-background-color: #4682B4;" styleClass="espace" stylesheets="@ccis.css" text="  Espace de l'entreprise        " textFill="WHITE">
+                            <font>
+                                <Font name="Segoe UI Bold" size="25.0" />
+                            </font>
+                        </Button>
+                  <VBox fx:id="VboxEE" prefHeight="421.0" prefWidth="443.0">
+                     <children>
+                        <Button fx:id="Lieu1" mnemonicParsing="false" onAction="#PageLieuEE" prefHeight="63.0" prefWidth="466.0" style="-fx-background-color: #4682B4;" text="Lieu" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Objet1" mnemonicParsing="false" onAction="#ObjetActionEE" prefHeight="63.0" prefWidth="457.0" style="-fx-background-color: #4682B4;" text="                     Objet de la visite" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Statut1" mnemonicParsing="false" onAction="#StatutActionEE" prefHeight="71.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                            Statut de demandeur" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Forme1" mnemonicParsing="false" onAction="#FormeActionEE" prefHeight="66.0" prefWidth="463.0" style="-fx-background-color: #4682B4;" text="                   Forme Juridique" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Taille1" mnemonicParsing="false" onAction="#TailleActionEE" prefHeight="77.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                        Taille de l'entreprise" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Secteur1" mnemonicParsing="false" onAction="#SecteurActionEE" prefHeight="75.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                    Secteur d'activité" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <Button id="Guichet" fx:id="Guichet" mnemonicParsing="false" onAction="#Guichet" prefHeight="90.0" prefWidth="444.0" style="-fx-background-color: #4682B4;" styleClass="guichet" stylesheets="@ccis.css" text="Guichet  de proximité              " textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="25.0" />
+                     </font>
+                  </Button>
+                  <VBox fx:id="VboxGuichet" prefHeight="474.0" prefWidth="444.0">
+                     <children>
+                        <Button fx:id="Lieu11" mnemonicParsing="false" onAction="#PageLieuGuichet" prefHeight="63.0" prefWidth="466.0" style="-fx-background-color: #4682B4;" text="Lieu" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Objet11" mnemonicParsing="false" onAction="#ObjetActionGuichet" prefHeight="63.0" prefWidth="457.0" style="-fx-background-color: #4682B4;" text="                     Objet de la visite" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Statut11" mnemonicParsing="false" onAction="#StatutActionGuichet" prefHeight="71.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                            Statut de demandeur" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Forme11" mnemonicParsing="false" onAction="#FormeActionGuichet" prefHeight="66.0" prefWidth="463.0" style="-fx-background-color: #4682B4;" text="                   Forme Juridique" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Taille11" mnemonicParsing="false" onAction="#TailleActionGuichet" prefHeight="77.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                        Taille de l'entreprise" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="Secteur11" mnemonicParsing="false" onAction="#SecteurActionGuichet" prefHeight="75.0" prefWidth="450.0" style="-fx-background-color: #4682B4;" text="                    Secteur d'activité" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+                    </children>
+                </VBox>
+                <AnchorPane fx:id="root" layoutX="441.0" layoutY="-1.0" prefHeight="3210.0" prefWidth="1161.0">
+               <children>
+                      <Button layoutX="878.0" layoutY="91.0" minWidth="53.0" mnemonicParsing="false" onAction="#logOutAction" prefHeight="83.0" prefWidth="77.0" style="-fx-background-color: #FFFFFF;" />
+                      <ImageView fitHeight="68.0" fitWidth="35.0" layoutX="899.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@DocImg/logout-64.png" />
+                          </image>
+                      </ImageView>
+               </children></AnchorPane>
+                  <ImageView fitHeight="116.0" fitWidth="498.0" layoutX="22.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                      <image>
+                          <Image url="@DocImg/logo-ccis.png" />
+                      </image>
+                  </ImageView>
+            </children>
+        </AnchorPane>
+   </content>
+</ScrollPane>
